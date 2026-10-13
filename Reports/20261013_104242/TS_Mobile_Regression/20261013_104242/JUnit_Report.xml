@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Mobile_Regression" time="99.816" tests="3" failures="0" errors="0">
+   <testsuite name="TS_Mobile_Regression" tests="3" failures="0" errors="0" time="99.816" skipped="0" timestamp="2026-10-13T03:42:46.569Z" hostname="djeha - Jehan" id="Test Suites/TS_Mobile_Regression">
+      <properties>
+         <property name="deviceName" value="samsung SM-A135F (Android 13)"/>
+         <property name="devicePlatform" value="Android"/>
+         <property name="logFolder" value="C:\\Users\\djeha\\Katalon Studio\\FinalProject_Mobile_AfterOffice\\Reports\\20261013_104242\\TS_Mobile_Regression\\20261013_104242"/>
+         <property name="logFiles" value="C:\\Users\\djeha\\Katalon Studio\\FinalProject_Mobile_AfterOffice\\Reports\\20261013_104242\\TS_Mobile_Regression\\20261013_104242\\appium.log, C:\\Users\\djeha\\Katalon Studio\\FinalProject_Mobile_AfterOffice\\Reports\\20261013_104242\\TS_Mobile_Regression\\20261013_104242\\appium_error.log, C:\\Users\\djeha\\Katalon Studio\\FinalProject_Mobile_AfterOffice\\Reports\\20261013_104242\\TS_Mobile_Regression\\20261013_104242\\console0.log, C:\\Users\\djeha\\Katalon Studio\\FinalProject_Mobile_AfterOffice\\Reports\\20261013_104242\\TS_Mobile_Regression\\20261013_104242\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="djeha - Jehan"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.3.2.0"/>
+         <property name="deviceOS" value="Android"/>
+         <property name="userFullName" value="Hans Anwar"/>
+         <property name="deviceModel" value="SM-A135F"/>
+         <property name="hostAddress" value="172.21.138.206"/>
+         <property name="projectName" value="FinalProject_Mobile_AfterOffice"/>
+         <property name="deviceManufacturer" value="samsung"/>
+         <property name="deviceId" value="RR8TB01WHXY"/>
+         <property name="deviceName" value="samsung SM-A135F (Android 13)"/>
+         <property name="deviceOSVersion" value="13"/>
+      </properties>
+      <testcase name="Test Cases/TC_01_Login_Success" time="33.205" classname="Test Cases/TC_01_Login_Success" status="PASSED">
+         <system-out><![CDATA[13-10-2026T10:42:47 - [TEST_CASE][PASSED] - Test Cases/TC_01_Login_Success: Test Cases/TC_01_Login_Success
+
+13-10-2026T10:42:47 - [TEST_STEP][PASSED] - appPath = getProjectDir() + "/androidapp/SauceLabs.apk": null
+
+13-10-2026T10:42:48 - [TEST_STEP][PASSED] - logInfo("=== START TC_01_LOGIN_SUCCESS ==="): === START TC_01_LOGIN_SUCCESS ===
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - === START TC_01_LOGIN_SUCCESS ===
+
+13-10-2026T10:42:48 - [TEST_STEP][PASSED] - logInfo("Membuka aplikasi dari path dinamis: " + appPath): Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:42:48 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - Starting application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - User set preference: ['appWaitActivity', '*']
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - User set preference: ['deviceId', 'RR8TB01WHXY']
+
+13-10-2026T10:42:48 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+13-10-2026T10:42:53 - [MESSAGE][INFO] - PATH: C:\Program Files\nodejs;
+
+13-10-2026T10:42:53 - [MESSAGE][INFO] - APPIUM_HOME: C:\Users\djeha\.appium
+
+13-10-2026T10:42:53 - [MESSAGE][INFO] - appium outlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium.log
+
+13-10-2026T10:42:53 - [MESSAGE][INFO] - appium errlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium_error.log
+
+13-10-2026T10:42:56 - [MESSAGE][INFO] - Appium server started on port 58,662
+
+13-10-2026T10:43:07 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+13-10-2026T10:43:07 - [MESSAGE][PASSED] - Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Login/input_Username"), 20): Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:43:08 - [MESSAGE][PASSED] - Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:43:08 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Username"), valid_username, 10): Text 'standard_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:43:11 - [MESSAGE][PASSED] - Text 'standard_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:43:11 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Password"), valid_password, 10): Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:43:14 - [MESSAGE][PASSED] - Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:43:14 - [TEST_STEP][PASSED] - tap(findTestObject("page_Login/btn_Login"), 10): Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:43:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:43:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Products/text_Header_Products"), 20): Element 'Object Repository/page_Products/text_Header_Products' is present
+
+13-10-2026T10:43:18 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/text_Header_Products' is present
+
+13-10-2026T10:43:18 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("page_Products/text_Header_Products"), 10): Element 'Object Repository/page_Products/text_Header_Products' is exist
+
+13-10-2026T10:43:19 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/text_Header_Products' is exist
+
+13-10-2026T10:43:19 - [TEST_STEP][PASSED] - logInfo(">> Assertion Berhasil: User berhasil login dan melihat katalog PRODUCTS."): >> Assertion Berhasil: User berhasil login dan melihat katalog PRODUCTS.
+
+13-10-2026T10:43:19 - [MESSAGE][INFO] - >> Assertion Berhasil: User berhasil login dan melihat katalog PRODUCTS.
+
+13-10-2026T10:43:19 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+13-10-2026T10:43:20 - [MESSAGE][PASSED] - Close app successfully
+
+13-10-2026T10:43:20 - [TEST_STEP][PASSED] - logInfo("=== TC_01_LOGIN_SUCCESS PASSED ==="): === TC_01_LOGIN_SUCCESS PASSED ===
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - === TC_01_LOGIN_SUCCESS PASSED ===]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_02_Login_Failed" time="26.985" classname="Test Cases/TC_02_Login_Failed" status="PASSED">
+         <system-out><![CDATA[13-10-2026T10:43:20 - [TEST_CASE][PASSED] - Test Cases/TC_02_Login_Failed: Test Cases/TC_02_Login_Failed
+
+13-10-2026T10:43:20 - [TEST_STEP][PASSED] - appPath = getProjectDir() + "/androidapp/SauceLabs.apk": null
+
+13-10-2026T10:43:20 - [TEST_STEP][PASSED] - logInfo("=== START TC_02_LOGIN_FAILED ==="): === START TC_02_LOGIN_FAILED ===
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - === START TC_02_LOGIN_FAILED ===
+
+13-10-2026T10:43:20 - [TEST_STEP][PASSED] - logInfo("Membuka aplikasi dari path dinamis: " + appPath): Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:43:20 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - Starting application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - User set preference: ['appWaitActivity', '*']
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - User set preference: ['deviceId', 'RR8TB01WHXY']
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - PATH: C:\Program Files\nodejs;
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - APPIUM_HOME: C:\Users\djeha\.appium
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - appium outlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium.log
+
+13-10-2026T10:43:20 - [MESSAGE][INFO] - appium errlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium_error.log
+
+13-10-2026T10:43:22 - [MESSAGE][INFO] - Appium server started on port 58,863
+
+13-10-2026T10:43:33 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+13-10-2026T10:43:33 - [MESSAGE][PASSED] - Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Login/input_Username"), 20): Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:43:36 - [MESSAGE][PASSED] - Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:43:36 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Username"), invalid_username, 10): Text 'locked_out_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:43:39 - [MESSAGE][PASSED] - Text 'locked_out_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:43:39 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Password"), valid_password, 10): Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:43:42 - [MESSAGE][PASSED] - Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:43:42 - [TEST_STEP][PASSED] - tap(findTestObject("page_Login/btn_Login"), 10): Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:43:44 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:43:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Login/text_Error_Message"), 15): Element 'Object Repository/page_Login/text_Error_Message' is present
+
+13-10-2026T10:43:45 - [MESSAGE][PASSED] - Element 'Object Repository/page_Login/text_Error_Message' is present
+
+13-10-2026T10:43:45 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("page_Login/text_Error_Message"), 10): Element 'Object Repository/page_Login/text_Error_Message' is exist
+
+13-10-2026T10:43:46 - [MESSAGE][PASSED] - Element 'Object Repository/page_Login/text_Error_Message' is exist
+
+13-10-2026T10:43:46 - [TEST_STEP][PASSED] - logInfo(">> Assertion Berhasil: Pesan error login berhasil divalidasi."): >> Assertion Berhasil: Pesan error login berhasil divalidasi.
+
+13-10-2026T10:43:46 - [MESSAGE][INFO] - >> Assertion Berhasil: Pesan error login berhasil divalidasi.
+
+13-10-2026T10:43:46 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+13-10-2026T10:43:47 - [MESSAGE][PASSED] - Close app successfully
+
+13-10-2026T10:43:47 - [TEST_STEP][PASSED] - logInfo("=== TC_02_LOGIN_FAILED PASSED ==="): === TC_02_LOGIN_FAILED PASSED ===
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - === TC_02_LOGIN_FAILED PASSED ===]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_03_Add_Product_To_Cart" time="38.801" classname="Test Cases/TC_03_Add_Product_To_Cart" status="PASSED">
+         <system-out><![CDATA[13-10-2026T10:43:47 - [TEST_CASE][PASSED] - Test Cases/TC_03_Add_Product_To_Cart: Test Cases/TC_03_Add_Product_To_Cart
+
+13-10-2026T10:43:47 - [TEST_STEP][PASSED] - appPath = getProjectDir() + "/androidapp/SauceLabs.apk": null
+
+13-10-2026T10:43:47 - [TEST_STEP][PASSED] - logInfo("=== START TC_03_ADD_PRODUCT_TO_CART ==="): === START TC_03_ADD_PRODUCT_TO_CART ===
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - === START TC_03_ADD_PRODUCT_TO_CART ===
+
+13-10-2026T10:43:47 - [TEST_STEP][PASSED] - logInfo("Membuka aplikasi dari path dinamis: " + appPath): Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - Membuka aplikasi dari path dinamis: C:/Users/djeha/Katalon Studio/FinalProject_Mobile_AfterOffice/androidapp/SauceLabs.apk
+
+13-10-2026T10:43:47 - [TEST_STEP][PASSED] - startApplication(appPath, false): Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - Starting application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - User set preference: ['appWaitActivity', '*']
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - User set preference: ['deviceId', 'RR8TB01WHXY']
+
+13-10-2026T10:43:47 - [MESSAGE][INFO] - Detected NodeJS location: "C:\Program Files\nodejs\node.exe"
+
+13-10-2026T10:43:53 - [MESSAGE][INFO] - PATH: C:\Program Files\nodejs;
+
+13-10-2026T10:43:53 - [MESSAGE][INFO] - APPIUM_HOME: C:\Users\djeha\.appium
+
+13-10-2026T10:43:53 - [MESSAGE][INFO] - appium outlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium.log
+
+13-10-2026T10:43:53 - [MESSAGE][INFO] - appium errlog: C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\Reports\20261013_104242\TS_Mobile_Regression\20261013_104242\appium_error.log
+
+13-10-2026T10:43:55 - [MESSAGE][INFO] - Appium server started on port 53,101
+
+13-10-2026T10:44:05 - [MESSAGE][WARNING] - Unable to get appium status. Root cause (Cannot invoke "com.google.gson.JsonObject.getAsJsonPrimitive(String)" because the return value of "com.google.gson.JsonObject.getAsJsonObject(String)" is null)
+
+13-10-2026T10:44:05 - [MESSAGE][PASSED] - Started application: 'C:\Users\djeha\Katalon Studio\FinalProject_Mobile_AfterOffice\androidapp\SauceLabs.apk'
+
+13-10-2026T10:44:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Login/input_Username"), 20): Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:44:08 - [MESSAGE][PASSED] - Element 'Object Repository/page_Login/input_Username' is present
+
+13-10-2026T10:44:08 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Username"), valid_username, 10): Text 'standard_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:44:11 - [MESSAGE][PASSED] - Text 'standard_user' has been set to element 'Object Repository/page_Login/input_Username'
+
+13-10-2026T10:44:11 - [TEST_STEP][PASSED] - setText(findTestObject("page_Login/input_Password"), valid_password, 10): Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:44:14 - [MESSAGE][PASSED] - Text 'secret_sauce' has been set to element 'Object Repository/page_Login/input_Password'
+
+13-10-2026T10:44:14 - [TEST_STEP][PASSED] - tap(findTestObject("page_Login/btn_Login"), 10): Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:44:15 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/page_Login/btn_Login'
+
+13-10-2026T10:44:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Products/text_Header_Products"), 20): Element 'Object Repository/page_Products/text_Header_Products' is present
+
+13-10-2026T10:44:18 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/text_Header_Products' is present
+
+13-10-2026T10:44:18 - [TEST_STEP][PASSED] - logInfo(">> Katalog produk berhasil dimuat."): >> Katalog produk berhasil dimuat.
+
+13-10-2026T10:44:18 - [MESSAGE][INFO] - >> Katalog produk berhasil dimuat.
+
+13-10-2026T10:44:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Products/btn_Add_To_Cart"), 15): Element 'Object Repository/page_Products/btn_Add_To_Cart' is present
+
+13-10-2026T10:44:19 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/btn_Add_To_Cart' is present
+
+13-10-2026T10:44:19 - [TEST_STEP][PASSED] - tap(findTestObject("page_Products/btn_Add_To_Cart"), 10): Tapped on element 'Object Repository/page_Products/btn_Add_To_Cart'
+
+13-10-2026T10:44:20 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/page_Products/btn_Add_To_Cart'
+
+13-10-2026T10:44:20 - [TEST_STEP][PASSED] - logInfo(">> Tombol ADD TO CART berhasil di-tap."): >> Tombol ADD TO CART berhasil di-tap.
+
+13-10-2026T10:44:20 - [MESSAGE][INFO] - >> Tombol ADD TO CART berhasil di-tap.
+
+13-10-2026T10:44:20 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Products/btn_Cart"), 10): Element 'Object Repository/page_Products/btn_Cart' is present
+
+13-10-2026T10:44:21 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/btn_Cart' is present
+
+13-10-2026T10:44:21 - [TEST_STEP][PASSED] - tap(findTestObject("page_Products/btn_Cart"), 10): Tapped on element 'Object Repository/page_Products/btn_Cart'
+
+13-10-2026T10:44:22 - [MESSAGE][PASSED] - Tapped on element 'Object Repository/page_Products/btn_Cart'
+
+13-10-2026T10:44:22 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("page_Products/text_Header_Cart"), 15): Element 'Object Repository/page_Products/text_Header_Cart' is present
+
+13-10-2026T10:44:24 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/text_Header_Cart' is present
+
+13-10-2026T10:44:24 - [TEST_STEP][PASSED] - verifyElementExist(findTestObject("page_Products/text_Header_Cart"), 10): Element 'Object Repository/page_Products/text_Header_Cart' is exist
+
+13-10-2026T10:44:25 - [MESSAGE][PASSED] - Element 'Object Repository/page_Products/text_Header_Cart' is exist
+
+13-10-2026T10:44:25 - [TEST_STEP][PASSED] - logInfo(">> Assertion Berhasil: Halaman keranjang belanja berhasil terbuka dengan produk."): >> Assertion Berhasil: Halaman keranjang belanja berhasil terbuka dengan produk.
+
+13-10-2026T10:44:25 - [MESSAGE][INFO] - >> Assertion Berhasil: Halaman keranjang belanja berhasil terbuka dengan produk.
+
+13-10-2026T10:44:25 - [TEST_STEP][PASSED] - closeApplication(): Close app successfully
+
+13-10-2026T10:44:26 - [MESSAGE][PASSED] - Close app successfully
+
+13-10-2026T10:44:26 - [TEST_STEP][PASSED] - logInfo("=== TC_03_ADD_PRODUCT_TO_CART PASSED ==="): === TC_03_ADD_PRODUCT_TO_CART PASSED ===
+
+13-10-2026T10:44:26 - [MESSAGE][INFO] - === TC_03_ADD_PRODUCT_TO_CART PASSED ===]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-10-2026T10:42:46 - [TEST_SUITE][PASSED] - TS_Mobile_Regression: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Negative Login Scenario: Login with locked_out_user, verify error message appears</description>
+   <name>TC_02_Login_Failed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88c31e42-78d9-4ac1-b8f2-3a9e4d5f6003</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive Scenario: Add first product to cart and verify cart contents</description>
+   <name>TC_03_Add_Product_To_Cart</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88c31e42-78d9-4ac1-b8f2-3a9e4d5f6007</testCaseGuid>
+</TestCaseEntity>

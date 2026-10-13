@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Positive Login Scenario: Login with standard_user and secret_sauce, verify PRODUCTS catalog screen appears</description>
+   <name>TC_01_Login_Success</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88c31e42-78d9-4ac1-b8f2-3a9e4d5f6001</testCaseGuid>
+</TestCaseEntity>

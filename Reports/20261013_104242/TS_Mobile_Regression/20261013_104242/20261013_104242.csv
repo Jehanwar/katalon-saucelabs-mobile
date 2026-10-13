@@ -1,0 +1,54 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Mobile_Regression,,Regression Test Suite for SauceLabs Mobile Application,,13-10-2026 10:42:46,13-10-2026 10:44:26,1m - 39.827s,PASSED
+,,,,,,,
+Test Cases/TC_01_Login_Success,,"Positive Login Scenario: Login with standard_user and secret_sauce, verify PRODUCTS catalog screen appears",,13-10-2026 10:42:47,13-10-2026 10:43:20,33.205s,PASSED
+"appPath = getProjectDir() + ""/androidapp/SauceLabs.apk""",,,,13-10-2026 10:42:47,13-10-2026 10:42:48,0.013s,PASSED
+"logInfo(""=== START TC_01_LOGIN_SUCCESS ==="")",,,,13-10-2026 10:42:48,13-10-2026 10:42:48,0.017s,PASSED
+"logInfo(""Membuka aplikasi dari path dinamis: "" + appPath)",,,,13-10-2026 10:42:48,13-10-2026 10:42:48,0.013s,PASSED
+"startApplication(appPath, false)",,,,13-10-2026 10:42:48,13-10-2026 10:43:07,19.292s,PASSED
+"waitForElementPresent(findTestObject(""page_Login/input_Username""), 20)",,,,13-10-2026 10:43:07,13-10-2026 10:43:08,1.586s,PASSED
+"setText(findTestObject(""page_Login/input_Username""), valid_username, 10)",,,,13-10-2026 10:43:08,13-10-2026 10:43:11,3.011s,PASSED
+"setText(findTestObject(""page_Login/input_Password""), valid_password, 10)",,,,13-10-2026 10:43:11,13-10-2026 10:43:14,2.682s,PASSED
+"tap(findTestObject(""page_Login/btn_Login""), 10)",,,,13-10-2026 10:43:14,13-10-2026 10:43:15,1.341s,PASSED
+"waitForElementPresent(findTestObject(""page_Products/text_Header_Products""), 20)",,,,13-10-2026 10:43:15,13-10-2026 10:43:18,2.355s,PASSED
+"verifyElementExist(findTestObject(""page_Products/text_Header_Products""), 10)",,,,13-10-2026 10:43:18,13-10-2026 10:43:19,0.888s,PASSED
+"logInfo("">> Assertion Berhasil: User berhasil login dan melihat katalog PRODUCTS."")",,,,13-10-2026 10:43:19,13-10-2026 10:43:19,0.009s,PASSED
+closeApplication(),,,,13-10-2026 10:43:19,13-10-2026 10:43:20,1.330s,PASSED
+"logInfo(""=== TC_01_LOGIN_SUCCESS PASSED ==="")",,,,13-10-2026 10:43:20,13-10-2026 10:43:20,0.006s,PASSED
+,,,,,,,
+Test Cases/TC_02_Login_Failed,,"Negative Login Scenario: Login with locked_out_user, verify error message appears",,13-10-2026 10:43:20,13-10-2026 10:43:47,26.985s,PASSED
+"appPath = getProjectDir() + ""/androidapp/SauceLabs.apk""",,,,13-10-2026 10:43:20,13-10-2026 10:43:20,0.007s,PASSED
+"logInfo(""=== START TC_02_LOGIN_FAILED ==="")",,,,13-10-2026 10:43:20,13-10-2026 10:43:20,0.002s,PASSED
+"logInfo(""Membuka aplikasi dari path dinamis: "" + appPath)",,,,13-10-2026 10:43:20,13-10-2026 10:43:20,0.009s,PASSED
+"startApplication(appPath, false)",,,,13-10-2026 10:43:20,13-10-2026 10:43:33,13.258s,PASSED
+"waitForElementPresent(findTestObject(""page_Login/input_Username""), 20)",,,,13-10-2026 10:43:33,13-10-2026 10:43:36,2.632s,PASSED
+"setText(findTestObject(""page_Login/input_Username""), invalid_username, 10)",,,,13-10-2026 10:43:36,13-10-2026 10:43:39,2.878s,PASSED
+"setText(findTestObject(""page_Login/input_Password""), valid_password, 10)",,,,13-10-2026 10:43:39,13-10-2026 10:43:42,3.362s,PASSED
+"tap(findTestObject(""page_Login/btn_Login""), 10)",,,,13-10-2026 10:43:42,13-10-2026 10:43:44,2.114s,PASSED
+"waitForElementPresent(findTestObject(""page_Login/text_Error_Message""), 15)",,,,13-10-2026 10:43:44,13-10-2026 10:43:45,0.632s,PASSED
+"verifyElementExist(findTestObject(""page_Login/text_Error_Message""), 10)",,,,13-10-2026 10:43:45,13-10-2026 10:43:46,0.603s,PASSED
+"logInfo("">> Assertion Berhasil: Pesan error login berhasil divalidasi."")",,,,13-10-2026 10:43:46,13-10-2026 10:43:46,0.003s,PASSED
+closeApplication(),,,,13-10-2026 10:43:46,13-10-2026 10:43:47,1.365s,PASSED
+"logInfo(""=== TC_02_LOGIN_FAILED PASSED ==="")",,,,13-10-2026 10:43:47,13-10-2026 10:43:47,0.005s,PASSED
+,,,,,,,
+Test Cases/TC_03_Add_Product_To_Cart,,Positive Scenario: Add first product to cart and verify cart contents,,13-10-2026 10:43:47,13-10-2026 10:44:26,38.801s,PASSED
+"appPath = getProjectDir() + ""/androidapp/SauceLabs.apk""",,,,13-10-2026 10:43:47,13-10-2026 10:43:47,0.005s,PASSED
+"logInfo(""=== START TC_03_ADD_PRODUCT_TO_CART ==="")",,,,13-10-2026 10:43:47,13-10-2026 10:43:47,0.007s,PASSED
+"logInfo(""Membuka aplikasi dari path dinamis: "" + appPath)",,,,13-10-2026 10:43:47,13-10-2026 10:43:47,0.003s,PASSED
+"startApplication(appPath, false)",,,,13-10-2026 10:43:47,13-10-2026 10:44:05,17.997s,PASSED
+"waitForElementPresent(findTestObject(""page_Login/input_Username""), 20)",,,,13-10-2026 10:44:05,13-10-2026 10:44:08,2.592s,PASSED
+"setText(findTestObject(""page_Login/input_Username""), valid_username, 10)",,,,13-10-2026 10:44:08,13-10-2026 10:44:11,2.915s,PASSED
+"setText(findTestObject(""page_Login/input_Password""), valid_password, 10)",,,,13-10-2026 10:44:11,13-10-2026 10:44:14,3.299s,PASSED
+"tap(findTestObject(""page_Login/btn_Login""), 10)",,,,13-10-2026 10:44:14,13-10-2026 10:44:15,1.339s,PASSED
+"waitForElementPresent(findTestObject(""page_Products/text_Header_Products""), 20)",,,,13-10-2026 10:44:15,13-10-2026 10:44:18,2.462s,PASSED
+"logInfo("">> Katalog produk berhasil dimuat."")",,,,13-10-2026 10:44:18,13-10-2026 10:44:18,0.004s,PASSED
+"waitForElementPresent(findTestObject(""page_Products/btn_Add_To_Cart""), 15)",,,,13-10-2026 10:44:18,13-10-2026 10:44:19,0.935s,PASSED
+"tap(findTestObject(""page_Products/btn_Add_To_Cart""), 10)",,,,13-10-2026 10:44:19,13-10-2026 10:44:20,1.033s,PASSED
+"logInfo("">> Tombol ADD TO CART berhasil di-tap."")",,,,13-10-2026 10:44:20,13-10-2026 10:44:20,0.006s,PASSED
+"waitForElementPresent(findTestObject(""page_Products/btn_Cart""), 10)",,,,13-10-2026 10:44:20,13-10-2026 10:44:21,0.858s,PASSED
+"tap(findTestObject(""page_Products/btn_Cart""), 10)",,,,13-10-2026 10:44:21,13-10-2026 10:44:22,0.968s,PASSED
+"waitForElementPresent(findTestObject(""page_Products/text_Header_Cart""), 15)",,,,13-10-2026 10:44:22,13-10-2026 10:44:24,2.073s,PASSED
+"verifyElementExist(findTestObject(""page_Products/text_Header_Cart""), 10)",,,,13-10-2026 10:44:24,13-10-2026 10:44:25,0.856s,PASSED
+"logInfo("">> Assertion Berhasil: Halaman keranjang belanja berhasil terbuka dengan produk."")",,,,13-10-2026 10:44:25,13-10-2026 10:44:25,0.002s,PASSED
+closeApplication(),,,,13-10-2026 10:44:25,13-10-2026 10:44:26,1.293s,PASSED
+"logInfo(""=== TC_03_ADD_PRODUCT_TO_CART PASSED ==="")",,,,13-10-2026 10:44:26,13-10-2026 10:44:26,0.003s,PASSED

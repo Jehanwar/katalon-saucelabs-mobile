@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buku Panduan Lengkap: Mobile Test Automation (Katalon Studio & Appium)</title>
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --primary-dark: #0d47a1;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #202124;
+      --text-muted: #5f6368;
+      --border: #dadce0;
+      --code-bg: #282c34;
+      --accent-green: #0f9d58;
+      --accent-yellow: #f4b400;
+      --accent-red: #d93025;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--primary-dark);
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 12px;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-top: 36px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-top: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .badge-success { background: #e6f4ea; color: var(--accent-green); }
+    .badge-info { background: #e8f0fe; color: var(--primary); }
+    .badge-warn { background: #fef7e0; color: #b06000; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    th {
+      background: #f1f3f4;
+      color: var(--text);
+      font-weight: 600;
+    }
+    pre {
+      background: var(--code-bg);
+      color: #abb2bf;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      font-family: Consolas, Monaco, "Courier New", monospace;
+    }
+    code {
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      background: #f1f3f4;
+      color: #d93025;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    pre code {
+      background: transparent;
+      color: inherit;
+      padding: 0;
+    }
+    .callout {
+      border-left: 4px solid var(--primary);
+      background: #f8faff;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .callout-warning {
+      border-left-color: var(--accent-yellow);
+      background: #fffdf5;
+    }
+    .callout-danger {
+      border-left-color: var(--accent-red);
+      background: #fdf7f7;
+    }
+    .callout-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    @media print {
+      body { background: white; }
+      .container { box-shadow: none; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Buku Panduan Lengkap: Mobile Test Automation</h1>
+    <p>
+      <span class="badge badge-info">Katalon Studio Enterprise</span>
+      <span class="badge badge-info">Appium 2.x</span>
+      <span class="badge badge-info">Real Device Samsung</span>
+      <span class="badge badge-success">TS_Mobile_Regression: PASSED</span>
+    </p>
+    <p><strong>Target Aplikasi</strong>: SauceLabs Mobile Sample App (<code>SauceLabs.apk</code>)<br>
+    <strong>Metode Eksekusi</strong>: Real Android Device (Samsung SM-A135F, Android 13 via USB Data Cable)</p>
+
+    <hr style="border: none; border-top: 1px solid var(--border); margin: 24px 0;">
+
+    <h2>1. Arsitektur Lightweight Real Device</h2>
+    <p>Dibandingkan menggunakan emulator Android Studio yang memakan RAM hingga 8GB-12GB dan memperlambat laptop, arsitektur <em>Real Device</em> jauh lebih ringan, stabil, dan merepresentasikan pengalaman pengguna nyata.</p>
+    <div class="callout">
+      <div class="callout-title">Alur Komunikasi:</div>
+      <strong>Katalon Studio</strong> (Script Groovy) ➔ <strong>Appium Server 2.x</strong> (Port Dinamis / 4723) ➔ <strong>UiAutomator2 Server</strong> (di dalam HP) ➔ <strong>Aplikasi Swag Labs</strong>.
+    </div>
+
+    <h2>2. Matriks Versi yang Kompatibel (Sangat Kritis)</h2>
+    <div class="callout callout-danger">
+      <div class="callout-title">⚠️ Peringatan Kompatibilitas Versi:</div>
+      Kesalahan umum nomor 1 pada Appium 2.x adalah menginstal driver tanpa tag versi. Menginstal driver <code>uiautomator2</code> versi terbaru (4.x/5.x) akan gagal karena versi tersebut khusus untuk Appium 3 RC. Untuk Appium 2.x, <strong>WAJIB menggunakan <code>uiautomator2@3.8.0</code></strong>.
+    </div>
+    <table>
+      <thead>
+        <tr><th>Komponen</th><th>Versi Teruji & Stabil</th><th>Fungsi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Node.js</strong></td><td><code>v20.18.0 (LTS)</code></td><td>Runtime untuk menjalankan Appium server</td></tr>
+        <tr><td><strong>Appium</strong></td><td><code>2.19.0</code></td><td>Engine otomasi mobile global</td></tr>
+        <tr><td><strong>UiAutomator2 Driver</strong></td><td><code>uiautomator2@3.8.0</code></td><td>Jembatan Appium ke framework Android</td></tr>
+        <tr><td><strong>Android ADB</strong></td><td>Android Platform-Tools</td><td>Komunikasi data USB ke perangkat fisik</td></tr>
+      </tbody>
+    </table>
+
+    <h2>3. Langkah Setup Lengkap dari Nol</h2>
+    <h3>A. Terminal Setup</h3>
+    <pre><code># 1. Install Appium secara global
+npm install -g appium
+
+# 2. Install Driver uiautomator2 versi kompatibel
+appium driver install uiautomator2@3.8.0
+
+# 3. Cek apakah terpasang
+appium driver list</code></pre>
+
+    <h3>B. Setup HP Android</h3>
+    <ol>
+      <li>Masuk ke <strong>Pengaturan</strong> ➔ <strong>Tentang Ponsel</strong> ➔ <strong>Informasi Perangkat Lunak</strong> ➔ Ketuk <strong>Nomor Versi (Build Number)</strong> sebanyak 7 kali.</li>
+      <li>Buka <strong>Pilihan Pengembang (Developer Options)</strong> ➔ Aktifkan <strong>Debugging USB (USB Debugging)</strong>.</li>
+      <li>Aktifkan opsi <strong>Tetap Terjaga (Stay Awake)</strong> agar layar tidak terkunci selama dicolok USB.</li>
+      <li>Hubungkan kabel USB ke laptop, setujui dialog <em>"Selalu izinkan dari komputer ini"</em>.</li>
+    </ol>
+
+    <h3>C. Konfigurasi di Katalon Studio</h3>
+    <ol>
+      <li><strong>Appium Directory</strong>: Menu <code>Window ➔ Preferences ➔ Katalon ➔ Mobile</code> ➔ Arahkan ke:
+        <br><code>C:\Users\&lt;username&gt;\AppData\Roaming\npm\node_modules\appium</code></li>
+      <li><strong>Anti-Crash SplashActivity</strong>: Menu <code>Project ➔ Settings ➔ Desired Capabilities ➔ Mobile ➔ Android</code> ➔ Tambahkan properti:
+        <br><strong>Name</strong>: <code>appWaitActivity</code>, <strong>Value</strong>: <code>*</code></li>
+    </ol>
+
+    <h2>4. Implementasi Test Case & Standar Rubrik</h2>
+    <ul>
+      <li><strong>No Hardcode Path</strong>: APK disimpan di dalam folder proyek <code>androidapp/SauceLabs.apk</code> dan dipanggil menggunakan:
+        <br><code>String appPath = RunConfiguration.getProjectDir() + '/androidapp/SauceLabs.apk'</code></li>
+      <li><strong>No Record Mobile</strong>: Elemen ditangkap menggunakan <em>Mobile Object Spy</em> dengan locator prioritas <code>Accessibility ID (content-desc)</code>.</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr><th>Test Case</th><th>Tipe</th><th>Fokus Validasi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>TC_01_Login_Success</code></td><td><span class="badge badge-success">Positive</span></td><td>Login kredensial valid ➔ Header katalog <code>PRODUCTS</code> muncul</td></tr>
+        <tr><td><code>TC_02_Login_Failed</code></td><td><span class="badge badge-warn">Negative</span></td><td>Login user terkunci (<code>locked_out_user</code>) ➔ Container <code>test-Error message</code> muncul</td></tr>
+        <tr><td><code>TC_03_Add_Product_To_Cart</code></td><td><span class="badge badge-success">Positive E2E</span></td><td>Login ➔ Tap <code>ADD TO CART</code> ➔ Tap <code>Cart</code> ➔ Header <code>YOUR CART</code> muncul</td></tr>
+        <tr><td><code>TS_Mobile_Regression</code></td><td><span class="badge badge-info">Suite</span></td><td>Menjalankan ke-3 TC & menghasilkan laporan resmi (HTML/CSV)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Kamus Troubleshooting & Solusi Cepat</h2>
+    <div class="callout callout-warning">
+      <div class="callout-title">1. Error "Fail to start Appium server in 30 seconds"</div>
+      <strong>Penyebab:</strong> Sesi Mobile Object Spy atau proses node lama menggantung di background.<br>
+      <strong>Solusi:</strong> Tutup jendela Spy, jalankan di PowerShell: <code>Stop-Process -Name "node" -Force</code>.
+    </div>
+
+    <div class="callout callout-warning">
+      <div class="callout-title">2. Status Langsung &lt;Done&gt; (0/1 Runs) tanpa Reaksi di HP</div>
+      <strong>Penyebab:</strong> Script memiliki garis merah error di editor (misal: <code>GlobalVariable</code> belum sinkron).<br>
+      <strong>Solusi:</strong> Tutup tab <code>default</code> profile, lalu klik menu <code>Project ➔ Refresh (F5)</code> dan <code>Project ➔ Clean...</code>.
+    </div>
+
+    <div class="callout callout-warning">
+      <div class="callout-title">3. HP Diam / Timeout Mengetik</div>
+      <strong>Penyebab:</strong> Layar HP mati masuk mode Dozing/Terkunci.<br>
+      <strong>Solusi:</strong> Buka kunci layar HP dan aktifkan <em>Stay Awake</em> di Developer Options.
+    </div>
+
+    <p style="text-align: center; color: var(--text-muted); margin-top: 40px; font-size: 0.85rem;">
+      Dokumen Bahan Belajar Otomasi Mobile • Final Project AfterOffice Bootcamp • Siap Dicetak (Ctrl + P)
+    </p>
+  </div>
+</body>
+</html>

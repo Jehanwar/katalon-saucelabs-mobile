@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description>Cart button in the top right header</description>
+   <name>btn_Cart</name>
+   <tag></tag>
+   <elementGuidId>88c31e42-78d9-4ac1-b8f2-3a9e4d5f6005</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>content-desc</name>
+      <type>Main</type>
+      <value>test-Cart</value>
+   </webElementProperties>
+   <locator>//*[@content-desc='test-Cart']</locator>
+   <locatorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@content-desc='test-Cart']</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>test-Cart</value>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>XPATH</locatorStrategy>
+   <platform>ANDROID</platform>
+</MobileElementEntity>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Valid username for SauceLabs app</description>
+      <initValue>'standard_user'</initValue>
+      <name>valid_username</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Valid password for SauceLabs app</description>
+      <initValue>'secret_sauce'</initValue>
+      <name>valid_password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Locked out user for negative scenario</description>
+      <initValue>'locked_out_user'</initValue>
+      <name>invalid_username</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Wrong password for negative scenario</description>
+      <initValue>'wrong_password'</initValue>
+      <name>invalid_password</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

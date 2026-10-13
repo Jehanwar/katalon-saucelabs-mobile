@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileElementEntity>
+   <description>Header title 'PRODUCTS' on catalog screen</description>
+   <name>text_Header_Products</name>
+   <tag></tag>
+   <elementGuidId>11a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>android.widget.TextView</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PRODUCTS</value>
+   </webElementProperties>
+   <locator>//android.widget.TextView[@text='PRODUCTS']</locator>
+   <locatorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//android.widget.TextView[@text='PRODUCTS']</value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value>test-PRODUCTS</value>
+      </entry>
+   </locatorCollection>
+   <locatorStrategy>XPATH</locatorStrategy>
+   <platform>ANDROID</platform>
+</MobileElementEntity>
